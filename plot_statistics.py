@@ -31,23 +31,31 @@ if __name__ == '__main__':
             max_gen = int(s[-1,0])
             min_max_gen[i,:] = np.array([min_gen, max_gen])
             sizes[min_gen:max_gen+1,i] = s[:,1]
-
-
+        
         plt.figure()
+        xmin = np.min(min_max_gen)
+        xmax = np.max(min_max_gen)
+        
         plt.subplot(3, 1, 1)
         plt.barh(np.arange(n_species), min_max_gen[:,1]-min_max_gen[:,0], left=min_max_gen[:,0], alpha=0.8, height=1.0, facecolor='b', edgecolor='k')
         plt.grid(True)
+        plt.xlim(xmin, xmax)
         plt.ylabel('Species')
+        
         plt.subplot(3, 1, 2)
         for i in range(n_species):
             s = np.array(species[i])
             plt.plot(s[:,0],s[:,2])
         plt.grid(True)
+        plt.xlim(xmin, xmax)
         plt.ylabel('Fitness')
+        
         plt.subplot(3, 1, 3)
         plt.stackplot(np.arange(n_generations),sizes.T, alpha=0.4)
+        plt.xlim(xmin, xmax)
         plt.ylabel('Size')
         plt.xlabel('Generation')
+        
         plt.show()
 
     else:

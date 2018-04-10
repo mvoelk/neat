@@ -484,7 +484,7 @@ class RacetrackTaskNew():
         plt.close()
 
 
-    def _plot_states(self, X, X_label, filename):
+    def _plot_state(self, X, X_label, filename):
         n_X = np.shape(X)[1]
         fig, axx = plt.subplots(n_X, figsize=(10,16), sharex=True, sharey=False)
         for i in range(n_X):
@@ -525,7 +525,7 @@ if __name__ == '__main__':
         if sys.argv[1] == 'plot':
 
             filename = './results/RacetrackTaskNew_1/leader-000-017-00855-sim.json'
-
+            
             data = loadf(filename)
             steps, states, actions, idx_all, d_all, idx_v, idx_d = data
             X = np.array(states)
@@ -535,8 +535,8 @@ if __name__ == '__main__':
             U_label = ['delta', 'G', 'Fb', 'zeta', 'phi']
 
             task._plot_racetrack(data, 'racetrack_plot')
-            task._plot_states(X, X_label, 'racetrack_plot_X')
-            task._plot_states(U, U_label, 'racetrack_plot_U')
+            task._plot_state(X, X_label, 'racetrack_plot_X')
+            task._plot_state(U, U_label, 'racetrack_plot_U')
 
         else:
             pass

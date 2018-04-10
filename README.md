@@ -1,5 +1,5 @@
 
-# NEAT implementation in python
+# NEAT implementation in Python
 
 This repository contains an implementation of [NeuroEvolution of Augmenting Topologies](http://nn.cs.utexas.edu/downloads/papers/stanley.ec02.pdf) (NEAT) as it was described by Ken Stanley in 2002.
 
@@ -11,5 +11,5 @@ The following tasks are currently implemented:
 - Inverted pendulum, a pole is balanced by controlling a cart
 - Car on a racetrack, the model for the vehicle dynamics is rather sophisticated, NEAT seems to have difficulties with speed changes and gear shift
 
-I later noticed that [peas](https://github.com/noio/peas) solves XOR with less epochs. If you find out why this is the case, please let me know... ;)
+I later noticed that [peas](https://github.com/noio/peas) solves XOR with less generations. If you find out why this is the case, please let me know... ;)
 
