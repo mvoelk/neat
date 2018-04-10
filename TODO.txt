@@ -1,0 +1,34 @@
+### TODO
+
+documentation
+    definitions
+        epoch
+        generation
+        genotypes
+        pehnotype
+        species
+        ...
+
+neuron innovations can be the same as hidden nodes from substrat
+
+statistics 
+    fitness over generation, best and all species
+
+parallel execution
+
+order genomes by fitness
+    def __lt__(self, other):
+        return self.fitness < other.fitness
+    def __str__(self):
+        ...
+        return s
+
+Randomly connect one input to all hidden and output nodes (FS-NEAT)
+Partial connected ... fraction
+rtNEAT
+
+
+### DONE
+
+do not reset next_neuron_id in innovation when new genome is created
+when adding neurons, create link innovations only if they are not exist
