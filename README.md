@@ -11,5 +11,7 @@ The following tasks are currently implemented:
 - Inverted pendulum, a pole is balanced by controlling a cart
 - Car on a racetrack, the model for the vehicle dynamics is rather sophisticated, NEAT seems to have difficulties with speed changes and gear shift
 
-I later noticed that [peas](https://github.com/noio/peas) solves XOR with less generations. If you find out why this is the case, please let me know... ;)
+Here are some nice plots of the XOR evolution:
+![XOR Evolution](results/XorTask_4/statistics.png)
 
+I later noticed that [peas](https://github.com/noio/peas) solves XOR with fewer generations. If you find out why this is the case, please let me know... ;)

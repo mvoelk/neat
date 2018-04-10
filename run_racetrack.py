@@ -556,3 +556,8 @@ if __name__ == '__main__':
             print(task.net_statistic)
 
     sys.exit()
+
+
+# TODO
+# provide more state information to the network
+

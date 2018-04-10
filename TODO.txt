@@ -1,13 +1,14 @@
 ### TODO
 
 documentation
-    definitions
-        epoch
-        generation
-        genotypes
-        pehnotype
-        species
-        ...
+
+definitions
+    epoch
+    generation
+    genotypes
+    pehnotype
+    species
+    ...
 
 neuron innovations can be the same as hidden nodes from substrat
 
