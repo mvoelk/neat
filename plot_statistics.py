@@ -53,7 +53,7 @@ if __name__ == '__main__':
         plt.subplot(3, 1, 3)
         plt.stackplot(np.arange(n_generations),sizes.T, alpha=0.4)
         plt.xlim(xmin, xmax)
-        plt.ylabel('Size')
+        plt.ylabel('Population/Species Size')
         plt.xlabel('Generation')
         
         plt.show()

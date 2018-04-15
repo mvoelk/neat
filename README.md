@@ -9,9 +9,9 @@ The following tasks are currently implemented:
 
 - XOR, it requires at least one hidden unit and is therefore ideal for testing the implementation
 - Inverted pendulum, a pole is balanced by controlling a cart
-- Car on a racetrack, the model for the vehicle dynamics is rather sophisticated, NEAT seems to have difficulties with speed changes and gear shift
+- Car on a racetrack, the model for the vehicle dynamics is rather sophisticated and it seams that NEAT struggles with speed changes and gear shift
 
 Here are some nice plots of the XOR evolution:
 ![XOR Evolution](results/XorTask_4/statistics.png)
 
-I later noticed that [peas](https://github.com/noio/peas) solves XOR with fewer generations. If you find out why this is the case, please let me know... ;)
+It takes an average of 14 generations to solve the XOR task. Later, I noticed that [peas](https://github.com/noio/peas) does it with fewer generations. So, if you find out why this is the case, please let me know... ;)
